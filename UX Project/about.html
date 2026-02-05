@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYP Basketball Club</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .modal-content {
+      color: black; 
+    }
+
+    body {
+      background: url('https://eonreality.com/wp-content/uploads/2022/02/nyp-2022.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      margin-top: 80px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
+    .btn-join {
+      margin-top: 30px;
+      background-color: blue;
+      border: none;
+      border-radius: 30px;
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      color: white;
+    }
+
+    .btn-join:hover {
+      background-color: darkblue;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: auto;
+    }
+
+    .event-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🏀 NYP Basketball</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievement.html">Achievements</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="hero">
+    <h1>Welcome to NYP Basketball Club</h1>
+    <p>Where passion meets performance! 🏀<br />
+    Join us to grow your skills, teamwork, and leadership — both on and off the court.</p>
+    <a href="join.html" class="btn btn-join">Join Now</a>
+    <a href="members.html" class="btn btn-join ms-2">Meet Members</a>
+    <a href="achievement.html" class="btn btn-join ms-2">Our Achievements</a>
+  </div>
+
+  
+  <div class="container mt-5">
+    <div class="card bg-light text-dark shadow-lg">
+      <div class="card-body">
+        <h3 class="card-title text-center">About Us</h3>
+        <p class="card-text">
+          The NYP Basketball Club welcomes all students with a passion for basketball – from beginners to seasoned players. 
+          We hold regular training sessions, friendly matches, and inter-polytechnic competitions. Our goal is to build a strong, inclusive team spirit while having fun and improving skills.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+    
+<div class="container mt-5">
+  <h3 class="text-center text-white mb-4">📅 Upcoming Events</h3>
+  <div class="row g-4">
+    
+<div class="col-md-6">
+  <div class="card h-100 shadow-sm border-0 event-card">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-primary">🏀 Friendly Match (Coming Soon)</h5>
+      <p class="card-text text-dark">
+        <strong>Date:</strong> To Be Confirmed<br>
+        <strong>Location:</strong> NYP Sports Hall<br>
+        ⏳ Stay tuned for match updates!
+      </p>
+      
+<div class="mt-3">
+  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFriendly">
+    Details
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="card h-100 shadow-sm border-0 event-card">
+    <div class="card-body">
+      <h5 class="card-title fw-bold text-success">📝 Join Us Day</h5>
+      <p class="card-text text-dark">
+        <strong>Time:</strong> Every Friday, 12:00 PM – 2:00 PM<br>
+        <strong>Location:</strong> NYP Sports Hall<br>
+        ✨ Drop by to ask questions & join our team!
+      </p>
+<div class="mt-3">
+  <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalJoinUs">
+    Details
+  </button>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+  
+</div>
+</div>
+<footer class="bg-dark text-white mt-5 pt-4 pb-3">
+  <div class="container-fluid px-5">
+    <div class="row">
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5>About Us</h5>
+        <p class="small">
+          NYP Basketball Club is a vibrant community for basketball lovers of all skill levels.
+          We train, compete, and grow together — on and off the court.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled small">
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="members.html" class="text-white text-decoration-none">Members</a></li>
+          <li><a href="join.html" class="text-white text-decoration-none">Join Us</a></li>
+          <li><a href="achievement.html" class="text-white text-decoration-none">Achievements</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <p class="small mb-1">Email: <a href="mailto:nypbball@gmail.com" class="text-white text-decoration-none">nypbball@gmail.com</a></p>
+        <p class="small mb-2">Instagram: <a href="https://www.instagram.com/nypbball/" target="_blank" class="text-white text-decoration-none">@nypbball</a></p>
+        <div>
+          <a href="https://www.instagram.com/nypbball/" target="_blank" class="btn btn-outline-light btn-sm me-2">Instagram</a>
+          <a href="join.html" class="btn btn-outline-light btn-sm">Join Now</a>
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary">
+    <div class="text-center small">
+      © 2025 NYP Basketball Club. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+<div class="modal fade" id="modalFriendly" tabindex="-1" aria-labelledby="modalFriendlyLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalFriendlyLabel">🏀 Friendly Match</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>We’re planning a casual friendly game with another school.  
+           All members are welcome to join — just bring your energy and team spirit!</p>
+        <p>More details will be shared closer to the event date.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="join.html" class="btn btn-primary">Join the Club</a>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalJoinUs" tabindex="-1" aria-labelledby="modalJoinUsLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalJoinUsLabel">📝 Join Us Day</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Our open day is a relaxed chance to meet the team,  
+           see what training is like, and ask any questions you may have.</p>
+        <p>No commitment required — just come by and say hello!</p>
+      </div>
+      <div class="modal-footer">
+        <a href="join.html" class="btn btn-success">Sign Up Now</a>
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const detailButtons = document.querySelectorAll('[data-bs-target]');
+
+  detailButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const originalText = button.textContent;
+      const originalColor = button.style.backgroundColor;
+
+      button.textContent = 'Loading...';
+      button.style.backgroundColor = 'yellow'; 
+      button.disabled = true;
+
+      
+      setTimeout(() => {
+        button.textContent = originalText;
+        button.style.backgroundColor = originalColor || ''; 
+        button.disabled = false;
+      }, 1000);
+    });
+  });
+});
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

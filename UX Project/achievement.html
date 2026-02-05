@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Achievements - NYP Basketball</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+.navbar-dark {
+  background-color: #000;
+}
+
+.navbar-dark .nav-link {
+  color: #ccc;              /* Medium gray for nav links */
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #ffd700;           /* Gold for hover and active */
+}
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fffacd;
+  text-decoration: underline;
+}
+</style>
+<style>
+  body {
+  background: url('https://thumbs.dreamstime.com/b/basketball-court-hardwood-floor-ai-created-content-basketball-court-hardwood-floor-design-background-instagram-facebook-wall-324054071.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white; 
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: -1;
+}
+</style>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NYP Basketball</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="achievement.html">Achievements</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Achievements Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">🏅 Our Achievements</h2>
+    <style>
+  .card {
+    min-width: 300px; /* fixed width so they align */
+  }
+  .card-img-top {
+    height: 200px; /* uniform height */
+    object-fit: cover;
+  }
+    </style>
+    <style>
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  }
+</style>
+<style>
+  .achievement-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .achievement-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .achievement-card:hover img {
+    transform: scale(1.05); /* slight zoom effect */
+  }
+
+  /* Overlay container */
+  .card-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    transition: bottom 0.4s ease;
+    text-align: center;
+  }
+
+  /* Show overlay on hover */
+  .achievement-card:hover .card-overlay {
+    bottom: 0;
+  }
+</style>
+
+    <div class="row g-4 flex-nowrap overflow-auto">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm achievement-card">
+          <img src="https://www.nyp.edu.sg/content/dam/nypcorp/sg/en/student/life/co-curricular-activities/sports-and-adventure/basketball/Basketball_Pic%201_Square.jpg" class="card-img-top" alt="Championship 2024">
+          <div class="card-overlay">
+      <h5 class="card-title">🏆 Polytechnic Basketball League 2024 - Champions</h5>
+      <p class="card-text">Our team went undefeated to win the 2024 Polytechnic Basketball League.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm achievement-card">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.AyFb2YoeiAiZToue-24WNAHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Inter-Poly 2023">
+          <div class="card-overlay">
+            <h5 class="card-title"> Inter-Poly Sports Meet 2023 - 3rd Place</h5>
+            <p class="card-text">Strong defensive play helped us earn 3rd place in the 2023 competition.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm achievement-card">
+          <img src="https://www.tp.edu.sg/tsea2020/images/Sports-Team-Excellence-Award-Volleyball-Men_hero.jpg" class="card-img-top" alt="Excellence Award">
+          <div class="card-overlay">
+            <h5 class="card-title">🏅 NYP Sports Excellence Award 2022</h5>
+            <p class="card-text">We were honored with NYP's Sports Excellence Award for outstanding performance and sportsmanship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Video Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">🎥 Highlights</h2>
+    <div class="row g-4">
+      <!-- Video 1 -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 shadow-sm">
+          <iframe 
+            src="https://www.youtube.com/embed/uuTRqMxBuVA?si=XQCdywoTYn_qB_T3" 
+            title="Basketball Highlights 1" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <!-- Video 2 -->
+      <div class="col-md-6">
+        <div class="ratio ratio-16x9 shadow-sm">
+          <iframe 
+            src="https://www.youtube.com/embed/t_80eb7JLqQ" 
+            title="Basketball Highlights 2" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="text-center mt-5">
+      <a href="join.html" class="btn btn-primary btn-lg" style="border-radius: 30px; padding: 12px 30px;">
+        Inspired? Join the Team!
+      </a>
+    </div>
+    <footer class="text-center text-white py-3 bg-dark mt-5">
+      <small>© 2025 NYP Basketball Club. All rights reserved.</small>
+    </footer>
+</body>
+</html>

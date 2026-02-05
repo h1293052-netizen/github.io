@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Members - NYP Basketball</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+  background-color: #111;    /* Dark background */
+  color: #eee;               /* Light gray text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.navbar-dark {
+  background-color: #000;
+}
+
+.navbar-dark .nav-link {
+  color: #ccc;              /* Medium gray for nav links */
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #ffd700;           /* Gold for hover and active */
+}
+
+.btn-primary {
+  background-color: #ffd700; /* Gold button */
+  color: #111;              /* Dark text on gold */
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #e6c200; /* Darker gold on hover */
+}
+
+.table {
+  background-color: #222;   /* Dark background for table */
+  color: #ddd;              /* Light gray text */
+}
+
+.table-dark thead th {
+  background-color: #333;
+  color: #ffd700;           /* Gold text for table headers */
+}
+
+.coach-card {
+  background-color: #222;
+  color: #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.highlight-card {
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 10px #ffd700;
+  transform: scale(1.05);
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fffacd;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000;
+  color: #888;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+
+</style>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NYP Basketball</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="members.html">Members</a></li>
+          <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievement.html">Achievements</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="container mt-5">
+    <h2>Meet Our Members</h2>
+    <p>The NYP Basketball CCA is a student-run club that promotes excellence in sportsmanship, teamwork, and skill development. We welcome players of all levels and encourage both competition and camaraderie.</p>
+  </div>
+
+  <!-- Training Schedule Section -->
+  <div class="container mt-5">
+    <h3>🗓 Training Schedule</h3>
+    <table class="table table-bordered mt-3">
+      <thead class="table-dark">
+        <tr>
+          <th>Day</th>
+          <th>Time</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>5:00 PM – 7:00 PM</td>
+          <td>NYP Sports Hall</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>4:30 PM – 6:30 PM</td>
+          <td>NYP Outdoor Court</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>9:00 AM – 11:30 AM</td>
+          <td>NYP Sports Hall</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Meet the Coaches Section -->
+<div class="container mt-5">
+  <h3>🏀 Meet the Coaches</h3>
+  <div class="row g-4 mt-3">
+    <!-- Coach 1 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm coach-card">
+        <img src="https://blog.skilldevelopmentcoach.com/hubfs/Tony%20Bennett-1.jpg" class="card-img-top" alt="Coach Daniel Tan">
+        <div class="card-body">
+          <h5 class="card-title">Coach Daniel Tan</h5>
+          <p class="card-text">Head Coach with 15+ years of experience in coaching polytechnic and youth basketball teams. Passionate about building strong fundamentals and leadership in players.</p>
+          <p class="extra-info d-none">Fun fact: Loves playing 3-on-3 street basketball on weekends!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coach 2 -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm coach-card">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.jZDX3esxIwjC_sKjiCAjNgHaD2?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Coach Amanda Lim">
+        <div class="card-body">
+          <h5 class="card-title">Coach Amanda Lim</h5>
+          <p class="card-text">Assistant Coach and former national player. Focuses on strategic play, teamwork, and personal mentorship for all team members.</p>
+          <p class="extra-info d-none">Fun fact: Enjoys baking cookies for the team after big wins!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  /* Flex container for coaches */
+  .coaches-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0; /* no gap so they touch */
+  }
+
+  /* Each card takes exactly half */
+  .coach-card {
+    flex: 1;
+    background: white;
+    color: black;
+    text-align: center;
+  }
+
+  /* Same image size */
+  .coach-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* crop but keep proportion */
+    display: block;
+  }
+
+  /* Text styling */
+  .coach-info {
+    padding: 15px;
+  }
+</style> 
+
+<!-- JavaScript -->
+<script>
+  document.querySelectorAll('.coach-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const extraInfo = card.querySelector('.extra-info');
+      extraInfo.classList.toggle('d-none');
+      card.classList.toggle('highlight-card');
+    });
+  });
+</script>
+
+<!-- Optional: Styling for click effect -->
+<style>
+  .highlight-card {
+    border: 2px solid gold;
+    transform: scale(1.02);
+    transition: transform 0.2s ease, border 0.2s ease;
+  }
+  .coach-card {
+    cursor: pointer;
+  }
+</style>
+
+ <!-- Contact Us Section -->
+<div class="container mt-5 mb-5">
+<h3>📞 Contact Us</h3>
+<p>If you have any questions or would like to join us, feel free to reach out!</p>
+<ul>
+<li>Email: <a href="mailto:basketball@nyp.edu.sg">nypbball@gmail.com</a></li>
+<li>Instagram: <a href="https://www.instagram.com/nypbball/" target="_blank">@nypbasketball</a></li>
+</ul>
+<a href="join.html" class="btn btn-primary">Join Now</a>
+</div>
+
+  <footer class="text-center text-white py-3 bg-dark mt-5">
+      <small>© 2025 NYP Basketball Club. All rights reserved.</small>
+    </footer>
+</body>
+</html>
